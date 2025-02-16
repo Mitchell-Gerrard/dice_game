@@ -266,5 +266,5 @@ if __name__ == "__main__":
 
     network=nn.network([1,2,3,4,5,6],'dice_game_model')
     train()
-    nn.finish()
+    nn.finished()
     game_loop()
