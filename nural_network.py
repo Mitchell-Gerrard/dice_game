@@ -32,10 +32,10 @@ class network:
             
             self.weights.append(array)
         
-        self.lastb=np.random.uniform(0,1,6)
+        self.lastb=np.random.uniform(0,1,7)
         print(type(self.lastb))
         self.lastw=[]
-        for i in range(6):
+        for i in range(7):
             self.lastw.append(np.random.uniform(0,1,self.size))
         self.lastw=np.array(self.lastw)
         self.lastw=np.array(self.lastw.astype(float))
@@ -83,7 +83,7 @@ class network:
                 self.sig.append(sig)
         z=[]
         
-        for j in range(6):
+        for j in range(7):
             
             z.append(np.dot( self.lastw[j],sig)+self.lastb[j])
         lemons=np.array(z).astype(float)
